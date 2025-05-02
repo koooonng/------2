@@ -7,9 +7,9 @@ type PageLayoutProps = {
 
 const PageLayout = ({ children }: PageLayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f4f1]">
+    <div className="flex flex-col min-h-screen bg-[#F8F4E9]">
       {/* Верхняя декоративная полоса */}
-      <div className="h-6 bg-gradient-to-r from-[#d6bcfa] via-[#9b87f5] to-[#d6bcfa]"></div>
+      <div className="h-6 bg-gradient-to-r from-[#F5DEB3] via-[#D2B48C] to-[#F5DEB3]"></div>
       
       {/* Основной контент */}
       <div className="container max-w-4xl mx-auto px-4 py-8 flex-1">
@@ -17,7 +17,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       </div>
       
       {/* Подвал */}
-      <footer className="text-center py-6 text-[#8E9196] text-sm">
+      <footer className="text-center py-6 text-[#59534D] text-sm">
         <p>С любовью, Александр и Екатерина</p>
         <p className="mt-2">© 2025</p>
       </footer>

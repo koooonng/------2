@@ -9,16 +9,16 @@ type StoryCardProps = {
 
 const StoryCard = ({ title, paragraphs }: StoryCardProps) => {
   return (
-    <Card className="mb-12 border-[#d6bcfa] bg-white/70 backdrop-blur-sm shadow-md">
+    <Card className="mb-12 border-[#F5DEB3] bg-white/70 backdrop-blur-sm shadow-md">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-[#1A1F2C]">{title}</CardTitle>
+        <CardTitle className="text-2xl text-[#3C3830]">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <ScrollArea className="h-48">
           {paragraphs.map((paragraph, index) => (
             <p 
               key={index} 
-              className={`text-[#8E9196] leading-relaxed ${index < paragraphs.length - 1 ? 'mb-3' : ''}`}
+              className={`text-[#59534D] leading-relaxed ${index < paragraphs.length - 1 ? 'mb-3' : ''}`}
             >
               {paragraph}
             </p>

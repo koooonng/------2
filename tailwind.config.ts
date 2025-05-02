@@ -56,12 +56,12 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         wedding: {
-          'purple': '#9b87f5',
-          'dark-purple': '#7E69AB',
-          'light-purple': '#d6bcfa',
-          'text': '#8E9196',
-          'dark': '#1A1F2C',
-          'background': '#f8f4f1'
+          'beige': '#D2B48C',
+          'dark-beige': '#A89070',
+          'light-beige': '#F5DEB3',
+          'text': '#59534D',
+          'dark': '#3C3830',
+          'background': '#F8F4E9'
         }
       },
       borderRadius: {

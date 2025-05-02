@@ -16,15 +16,15 @@ type EventDetailsCardProps = {
 
 const EventDetailsCard = ({ title, description, details }: EventDetailsCardProps) => {
   return (
-    <Card className="mb-12 border-[#d6bcfa] bg-white/70 backdrop-blur-sm shadow-md hover-scale transition-all duration-300">
+    <Card className="mb-12 border-[#F5DEB3] bg-white/70 backdrop-blur-sm shadow-md hover-scale transition-all duration-300">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-[#1A1F2C]">{title}</CardTitle>
+        <CardTitle className="text-2xl text-[#3C3830]">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
         {details.map((item, index) => (
           <div key={index} className="flex items-center">
-            <div className="mr-4 text-[#9b87f5]">
+            <div className="mr-4 text-[#D2B48C]">
               <Icon name={item.icon} size={24} />
             </div>
             <div>

@@ -53,9 +53,9 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
   };
 
   return (
-    <Card className="mb-12 border-[#d6bcfa] bg-white/70 backdrop-blur-sm shadow-md">
+    <Card className="mb-12 border-[#F5DEB3] bg-white/70 backdrop-blur-sm shadow-md">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-[#1A1F2C]">Подтвердите ваше присутствие</CardTitle>
+        <CardTitle className="text-2xl text-[#3C3830]">Подтвердите ваше присутствие</CardTitle>
         <CardDescription>Пожалуйста, дайте нам знать до {deadline}</CardDescription>
       </CardHeader>
       <CardContent>
@@ -70,7 +70,7 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
               onChange={(e) => setGuestName(e.target.value)}
               placeholder="Иван Иванов"
               required
-              className="border-[#d6bcfa] focus-visible:ring-[#9b87f5]"
+              className="border-[#F5DEB3] focus-visible:ring-[#D2B48C]"
             />
           </div>
           
@@ -85,7 +85,7 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
               onChange={(e) => setGuestEmail(e.target.value)}
               placeholder="ivan@example.com"
               required
-              className="border-[#d6bcfa] focus-visible:ring-[#9b87f5]"
+              className="border-[#F5DEB3] focus-visible:ring-[#D2B48C]"
             />
           </div>
           
@@ -96,7 +96,7 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
                 type="button"
                 variant={attendance === "yes" ? "default" : "outline"}
                 onClick={() => setAttendance("yes")}
-                className={attendance === "yes" ? "bg-[#9b87f5] hover:bg-[#7E69AB]" : "border-[#d6bcfa]"}
+                className={attendance === "yes" ? "bg-[#D2B48C] hover:bg-[#A89070]" : "border-[#F5DEB3]"}
               >
                 С радостью приду
               </Button>
@@ -104,7 +104,7 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
                 type="button"
                 variant={attendance === "no" ? "default" : "outline"}
                 onClick={() => setAttendance("no")}
-                className={attendance === "no" ? "bg-[#9b87f5] hover:bg-[#7E69AB]" : "border-[#d6bcfa]"}
+                className={attendance === "no" ? "bg-[#D2B48C] hover:bg-[#A89070]" : "border-[#F5DEB3]"}
               >
                 К сожалению, не смогу
               </Button>
@@ -120,13 +120,13 @@ const RSVPForm = ({ deadline }: RSVPFormProps) => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Особые пожелания, вопросы..."
-              className="border-[#d6bcfa] focus-visible:ring-[#9b87f5]"
+              className="border-[#F5DEB3] focus-visible:ring-[#D2B48C]"
             />
           </div>
           
           <Button 
             type="submit" 
-            className="w-full bg-[#9b87f5] hover:bg-[#7E69AB]"
+            className="w-full bg-[#D2B48C] hover:bg-[#A89070]"
           >
             Отправить ответ
           </Button>
