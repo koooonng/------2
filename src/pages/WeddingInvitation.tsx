@@ -18,8 +18,9 @@ const WeddingInvitation = () => {
         locationDetails={{
           address: location.address,
           venueName: location.venueTitle,
-          mapUrl: location.mapUrl,
-          directionsUrl: location.directionsUrl
+          // Меняем на встроенную Яндекс карту без рекламы и с лучшей производительностью
+          mapUrl: "https://yandex.ru/maps-reviews-widget/1117767162?comments",
+          directionsUrl: "https://yandex.ru/maps/?rtext=~53.215189,50.190320&rtt=auto"
         }}
         coordinatorContact={coordinator}
       />

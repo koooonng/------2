@@ -44,6 +44,11 @@ const WeddingPhotos = ({
     };
   }, []);
 
+  // Функция для прямого перехода на официальный сайт отеля
+  const openHotelWebsite = () => {
+    window.open('https://hotels-samara.ru/gostinica-realliance/', '_blank');
+  };
+
   return (
     <div className="flex flex-col items-center gap-10">
       {coupleImage && (
@@ -87,13 +92,23 @@ const WeddingPhotos = ({
                   </p>
                 </div>
                 
-                <Button
-                  className="bg-[#C19A70] hover:bg-[#A97B50] text-white px-4 py-2 rounded-md transition-colors"
-                  onClick={() => window.open(locationDetails.directionsUrl, '_blank')}
-                >
-                  <Icon name="Navigation" className="mr-2" size={16} />
-                  Как добраться
-                </Button>
+                <div className="flex gap-2">
+                  <Button
+                    className="bg-[#C19A70] hover:bg-[#A97B50] text-white px-4 py-2 rounded-md transition-colors"
+                    onClick={() => window.open(locationDetails.directionsUrl, '_blank')}
+                  >
+                    <Icon name="Navigation" className="mr-2" size={16} />
+                    Как добраться
+                  </Button>
+                  
+                  <Button
+                    className="bg-white hover:bg-[#F3EDE4] text-[#A97B50] border border-[#C19A70] px-4 py-2 rounded-md transition-colors"
+                    onClick={openHotelWebsite}
+                  >
+                    <Icon name="Globe" className="mr-2" size={16} />
+                    Сайт отеля
+                  </Button>
+                </div>
               </div>
               
               <div className="mt-6 h-[300px] w-full rounded-md overflow-hidden">
