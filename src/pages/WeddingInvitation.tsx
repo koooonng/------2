@@ -4,10 +4,11 @@ import EventDetailsCard from "@/components/wedding/EventDetailsCard";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import ContactCard from "@/components/wedding/ContactCard";
 import LocationMap from "@/components/wedding/LocationMap";
+import DressCodeCard from "@/components/wedding/DressCodeCard";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
-  const { eventDetails, rsvp, contacts, location } = WEDDING_CONFIG;
+  const { eventDetails, rsvp, contacts, location, dressCode } = WEDDING_CONFIG;
 
   return (
     <PageLayout>
@@ -25,6 +26,14 @@ const WeddingInvitation = () => {
         title={eventDetails.title}
         description={eventDetails.description}
         details={eventDetails.items}
+      />
+      
+      <DressCodeCard 
+        title={dressCode.title}
+        description={dressCode.description}
+        colorPalette={dressCode.colorPalette}
+        confirmationText={dressCode.confirmationText}
+        confirmationDate={dressCode.confirmationDate}
       />
       
       <LocationMap 

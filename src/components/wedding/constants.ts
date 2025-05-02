@@ -38,6 +38,20 @@ export const WEDDING_CONFIG = {
     ]
   },
   
+  dressCode: {
+    title: "Дресс-код",
+    description: "Для нас главное-ваше присутствие! Но мы будем рады, если в своих нарядах вы поддержите цветовую гамму и стиль нашей свадьбы.",
+    colorPalette: [
+      { color: "#E5D6C5", label: "Бежевый светлый" },
+      { color: "#C19A70", label: "Золотисто-коричневый светлый" },
+      { color: "#A97B50", label: "Золотисто-коричневый средний" },
+      { color: "#DBCFC2", label: "Бежево-розовый светлый" },
+      { color: "#5C3A21", label: "Коричневый темный" }
+    ],
+    confirmationText: "Будем очень рады видеть вас! Просим подтвердить свое присутствие на торжество до",
+    confirmationDate: "1.06.2025"
+  },
+  
   story: {
     title: "Наша история",
     paragraphs: [
@@ -98,7 +112,7 @@ export const WEDDING_CONFIG = {
   },
   
   rsvp: {
-    deadline: "26 августа 2025"
+    deadline: "1 июня 2025"
   },
   
   contacts: {
