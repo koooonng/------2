@@ -1,22 +1,27 @@
 
-import { Separator } from "@/components/ui/separator";
+import { WEDDING_CONFIG } from "./constants";
 
-type PageHeaderProps = {
-  coupleNames: string;
-  subtitle: string;
-  date: string;
-};
+interface PageHeaderProps {
+  showImage?: boolean;
+}
 
-const PageHeader = ({ coupleNames, subtitle, date }: PageHeaderProps) => {
+const PageHeader = ({ showImage = false }: PageHeaderProps) => {
+  const { couple } = WEDDING_CONFIG;
+
   return (
-    <div className="text-center mb-16 mt-4 animate-fade-in">
-      <h1 className="font-serif text-4xl md:text-5xl text-[#A89070] mb-4">{coupleNames}</h1>
-      <p className="text-xl text-[#59534D] italic">{subtitle}</p>
-      <div className="mt-8 flex items-center justify-center">
-        <Separator className="w-24 bg-[#F5DEB3]" />
-        <span className="mx-4 text-2xl text-[#A89070]">{date}</span>
-        <Separator className="w-24 bg-[#F5DEB3]" />
-      </div>
+    <div className="text-center mb-10 py-6">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-dancing text-wedding-gold mb-4">
+        {couple.names}
+      </h1>
+      <p className="text-xl font-playfair text-wedding-brown mb-6">
+        {couple.subtitle}
+      </p>
+      <p className="text-2xl font-dancing text-wedding-brown mb-4">
+        {couple.inviteText}
+      </p>
+      <p className="text-xl font-playfair text-wedding-gold font-semibold">
+        {couple.fullDate}
+      </p>
     </div>
   );
 };
