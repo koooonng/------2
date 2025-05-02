@@ -5,6 +5,7 @@ import RSVPForm from "@/components/wedding/RSVPForm";
 import ContactCard from "@/components/wedding/ContactCard";
 import LocationMap from "@/components/wedding/LocationMap";
 import InvitationHeader from "@/components/wedding/InvitationHeader";
+import PageHeader from "@/components/wedding/PageHeader";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
@@ -12,6 +13,8 @@ const WeddingInvitation = () => {
 
   return (
     <PageLayout>
+      <PageHeader />
+      
       <InvitationHeader 
         title="Дресс-код"
         description="Для нас главное-ваше присутствие! Но мы будем рады, если в своих нарядах вы поддержите цветовую гамму и стиль нашей свадьбы."
