@@ -18,11 +18,11 @@ const WeddingInvitation = () => {
         locationDetails={{
           address: location.address,
           venueName: location.venueTitle,
-          mapUrl: "https://yandex.ru/maps-reviews-widget/1117767162?comments",
+          // Чистая карта без отзывов и рекламы
+          mapUrl: "https://yandex.ru/maps-reviews-widget/1117767162?comments_removed=1",
           directionsUrl: "https://yandex.ru/maps/?rtext=~53.215189,50.190320&rtt=auto"
         }}
         coordinatorContact={coordinator}
-        invitationUrl="https://wedding-samara.ru/karina-konstantin/"
       />
     </PageLayout>
   );
