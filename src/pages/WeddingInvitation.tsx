@@ -18,7 +18,6 @@ const WeddingInvitation = () => {
         locationDetails={{
           address: location.address,
           venueName: location.venueTitle,
-          // Чистая карта, как было изначально
           mapUrl: location.mapUrl,
           directionsUrl: location.directionsUrl
         }}
