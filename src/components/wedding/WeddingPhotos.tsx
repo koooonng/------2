@@ -46,7 +46,7 @@ const WeddingPhotos = ({
 
   // Функция для прямого перехода на официальный сайт отеля
   const openHotelWebsite = () => {
-    window.open('https://hotels-samara.ru/gostinica-realliance/', '_blank');
+    window.open('https://wedding/karina-konstantin.ru', '_blank');
   };
 
   return (
