@@ -2,6 +2,11 @@
 // Конфигурационные данные для свадебного приглашения
 
 export const WEDDING_CONFIG = {
+  siteInfo: {
+    domain: "https-wedding-k-k.ru",
+    baseUrl: "https://https-wedding-k-k.ru"
+  },
+  
   couple: {
     names: "Карина и Константин",
     subtitle: "Дорогие и близкие!",
@@ -66,7 +71,8 @@ export const WEDDING_CONFIG = {
     address: "г. Самара, ул. Ново-Садовая 162B",
     venueTitle: "REALLIANCE HOTEL SAMARA",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2392.6588830412294!2d50.18812607650837!3d53.215188890740675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416618733e2af8a7%3A0x990416dda6f59ab5!2z0J3QvtCy0L4t0KHQsNC00L7QstCw0Y8g0YPQuy4sIDE2MtCSLCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDMwNjg!5e0!3m2!1sru!2sru!4v1715033175877!5m2!1sru!2sru",
-    directionsUrl: "https://maps.google.com/?q=Samara+REALLIANCE+HOTEL"
+    directionsUrl: "https://maps.google.com/?q=Samara+REALLIANCE+HOTEL",
+    websiteUrl: "https://https-wedding-k-k.ru"
   },
   
   photos: {
