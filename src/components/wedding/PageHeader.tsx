@@ -10,16 +10,16 @@ const PageHeader = ({ showImage = false }: PageHeaderProps) => {
 
   return (
     <div className="text-center mb-10 py-6">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-dancing text-wedding-gold mb-4">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-dancing text-[#C19A70] mb-4">
         {couple.names}
       </h1>
-      <p className="text-xl font-playfair text-wedding-brown mb-6">
+      <p className="text-xl font-playfair text-[#A97B50] mb-6">
         {couple.subtitle}
       </p>
-      <p className="text-2xl font-dancing text-wedding-brown mb-4">
+      <p className="text-2xl font-dancing text-[#A97B50] mb-4">
         {couple.inviteText}
       </p>
-      <p className="text-xl font-playfair text-wedding-gold font-semibold">
+      <p className="text-xl font-playfair text-[#C19A70] font-semibold">
         {couple.fullDate}
       </p>
     </div>
