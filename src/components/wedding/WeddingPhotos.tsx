@@ -46,7 +46,7 @@ const WeddingPhotos = ({
 
   // Функция для прямого перехода на официальный сайт отеля
   const openHotelWebsite = () => {
-    window.open('https://wedding/karina-konstantin.ru', '_blank');
+    window.open('https://realliance.activhotels.ru/?ysclid=ma6r5ss8a6180427940', '_blank');
   };
 
   return (
