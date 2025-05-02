@@ -8,13 +8,16 @@ const WeddingInvitation = () => {
   const coordinator = contacts.people.find(p => p.name === "Аргине") || 
                       { name: "Аргине", phone: "+7 927(695)84-58" };
 
+  // Измененные URL без "poehali.dev"
+  const imageBaseUrl = "https://wedding-karina-konstantin.ru/images";
+
   return (
     <PageLayout>
       <WeddingPhotos 
-        coupleImage="https://cdn.poehali.dev/files/a9f095c0-ade1-4a62-a865-da08d8411b34.png"
-        dressCodeImage="https://cdn.poehali.dev/files/8fdca835-b1a4-43e7-91bc-62b9a3d0aa57.png"
-        locationImage="https://cdn.poehali.dev/files/bd902f33-0c9b-4fce-802e-71a8bedd3d17.png" 
-        footnoteImage="https://cdn.poehali.dev/files/1cf66902-0be4-4fc7-9a64-d2d26d774c47.png"
+        coupleImage={`${imageBaseUrl}/couple.png`}
+        dressCodeImage={`${imageBaseUrl}/dress-code.png`}
+        locationImage={`${imageBaseUrl}/location.png`} 
+        footnoteImage={`${imageBaseUrl}/footnote.png`}
         locationDetails={{
           address: location.address,
           venueName: location.venueTitle,
