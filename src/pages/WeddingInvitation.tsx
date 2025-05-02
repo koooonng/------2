@@ -1,7 +1,6 @@
 
 import PageLayout from "@/components/wedding/PageLayout";
 import LocationMap from "@/components/wedding/LocationMap";
-import PageHeader from "@/components/wedding/PageHeader";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
@@ -9,14 +8,13 @@ const WeddingInvitation = () => {
 
   return (
     <PageLayout>
-      <PageHeader />
-      
       <LocationMap 
-        title={location.title}
-        address={location.address}
-        venueTitle={location.venueTitle}
+        title=""
+        address=""
+        venueTitle=""
         mapUrl={location.mapUrl}
         directionsUrl={location.directionsUrl}
+        hideText={true}
       />
     </PageLayout>
   );
