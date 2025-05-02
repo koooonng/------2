@@ -138,7 +138,7 @@ const WeddingPhotos = ({
           {coordinatorContact && (
             <div className="mt-6 p-6 border border-[#C19A70] rounded-md bg-white text-center">
               <h3 className="text-lg font-playfair font-medium text-[#A97B50] mb-2">
-                Организатор свадьбы
+                Координатор свадьбы
               </h3>
               <p className="text-md font-playfair text-[#A97B50] mb-2">
                 {coordinatorContact.name}
