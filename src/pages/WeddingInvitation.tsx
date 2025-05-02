@@ -22,7 +22,6 @@ const WeddingInvitation = () => {
           directionsUrl: location.directionsUrl
         }}
         coordinatorContact={coordinator}
-        invitationUrl="https://wedding/karina-konstantin.ru"
       />
     </PageLayout>
   );
