@@ -3,10 +3,12 @@
 
 export const WEDDING_CONFIG = {
   couple: {
-    names: "Александр и Екатерина",
-    subtitle: "приглашают вас на свадьбу",
-    date: "19.08.2025",
-    fullDate: "19 августа 2025 года, суббота",
+    names: "Карина и Константин",
+    subtitle: "Дорогие и близкие!",
+    inviteText: "Приглашаем вас на наше свадебное торжество",
+    date: "26.09.2025",
+    fullDate: "26 сентября 2025 года, пятница",
+    time: "15:00",
   },
   
   eventDetails: {
@@ -16,22 +18,22 @@ export const WEDDING_CONFIG = {
       {
         icon: "CalendarHeart",
         title: "Дата",
-        details: ["19 августа 2025 года, суббота"]
+        details: ["26 сентября 2025 года, пятница"]
       },
       {
         icon: "Clock",
         title: "Время",
-        details: ["Сбор гостей в 15:00", "Начало церемонии в 16:00"]
+        details: ["Начало церемонии в 15:00"]
       },
       {
         icon: "MapPin",
         title: "Место проведения",
-        details: ["Ресторан \"Лазурный берег\"", "ул. Приморская, 15, Санкт-Петербург"]
+        details: ["REALLIANCE HOTEL SAMARA", "г. Самара, ул. Ново-Садовая 162B"]
       },
       {
         icon: "Utensils",
         title: "Дресс-код",
-        details: ["Коктейльные платья для дам, костюмы для мужчин", "Приветствуются оттенки лавандового и фиолетового"]
+        details: ["Коктейльные платья для дам, костюмы для мужчин", "Приветствуются оттенки бежевого и золотого"]
       }
     ]
   },
@@ -39,25 +41,75 @@ export const WEDDING_CONFIG = {
   story: {
     title: "Наша история",
     paragraphs: [
-      "Мы познакомились пять лет назад на фестивале современного искусства. Александр нечаянно пролил кофе на платье Екатерины, и чтобы загладить вину, пригласил ее на ужин.",
-      "С тех пор мы не расставались. Вместе мы путешествовали по Европе, завели кота по имени Байрон, и поняли, что хотим провести всю жизнь вместе.",
-      "В день нашей четвертой годовщины, на закате на берегу Финского залива, Александр сделал предложение. И теперь мы хотим разделить наше счастье с вами!"
+      "Мы познакомились несколько лет назад благодаря общим друзьям. С самого начала между нами возникла особая связь, которая со временем переросла в глубокое чувство.",
+      "Вместе мы путешествовали, преодолевали трудности и радовались победам. Каждый день, проведенный вдвоем, только укреплял нашу уверенность в том, что мы созданы друг для друга.",
+      "Теперь мы готовы сделать следующий шаг и хотим разделить этот особенный момент с теми, кто дорог нашим сердцам. Будем искренне рады видеть вас на нашем празднике!"
+    ]
+  },
+  
+  location: {
+    title: "Как нас найти",
+    address: "г. Самара, ул. Ново-Садовая 162B",
+    venueTitle: "REALLIANCE HOTEL SAMARA",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2392.6588830412294!2d50.18812607650837!3d53.215188890740675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416618733e2af8a7%3A0x990416dda6f59ab5!2z0J3QvtCy0L4t0KHQsNC00L7QstCw0Y8g0YPQuy4sIDE2MtCSLCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDMwNjg!5e0!3m2!1sru!2sru!4v1715033175877!5m2!1sru!2sru",
+    directionsUrl: "https://maps.google.com/?q=Samara+REALLIANCE+HOTEL"
+  },
+  
+  photos: {
+    title: "Наши фотографии",
+    items: [
+      {
+        id: 1,
+        url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1287&auto=format&fit=crop",
+        alt: "Пара на закате",
+        thumbnail: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        id: 2,
+        url: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=1171&auto=format&fit=crop",
+        alt: "Свадебный букет",
+        thumbnail: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        id: 3,
+        url: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1170&auto=format&fit=crop",
+        alt: "Помолвочное кольцо",
+        thumbnail: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        id: 4,
+        url: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1170&auto=format&fit=crop",
+        alt: "Пара на пляже",
+        thumbnail: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        id: 5,
+        url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1228&auto=format&fit=crop",
+        alt: "Свадебный торт",
+        thumbnail: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        id: 6,
+        url: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1170&auto=format&fit=crop",
+        alt: "Счастливая пара",
+        thumbnail: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=400&auto=format&fit=crop"
+      }
     ]
   },
   
   rsvp: {
-    deadline: "19 июля 2025"
+    deadline: "26 августа 2025"
   },
   
   contacts: {
     title: "Свяжитесь с нами",
     people: [
       {
-        name: "Александр",
+        name: "Константин",
         phone: "+7 (999) 123-45-67"
       },
       {
-        name: "Екатерина",
+        name: "Карина",
         phone: "+7 (999) 765-43-21"
       }
     ],
