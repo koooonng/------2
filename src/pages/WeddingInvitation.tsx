@@ -2,15 +2,13 @@
 import PageLayout from "@/components/wedding/PageLayout";
 import PageHeader from "@/components/wedding/PageHeader";
 import EventDetailsCard from "@/components/wedding/EventDetailsCard";
-import StoryCard from "@/components/wedding/StoryCard";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import ContactCard from "@/components/wedding/ContactCard";
 import LocationMap from "@/components/wedding/LocationMap";
-import PhotoGallery from "@/components/wedding/PhotoGallery";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
-  const { couple, eventDetails, story, rsvp, contacts, location, photos } = WEDDING_CONFIG;
+  const { couple, eventDetails, rsvp, contacts, location } = WEDDING_CONFIG;
 
   return (
     <PageLayout>
@@ -42,16 +40,6 @@ const WeddingInvitation = () => {
         venueTitle={location.venueTitle}
         mapUrl={location.mapUrl}
         directionsUrl={location.directionsUrl}
-      />
-      
-      <PhotoGallery 
-        title={photos.title}
-        photos={photos.items}
-      />
-      
-      <StoryCard 
-        title={story.title}
-        paragraphs={story.paragraphs}
       />
       
       <RSVPForm deadline={rsvp.deadline} />
