@@ -92,7 +92,7 @@ const WeddingPhotos = ({
                   onClick={() => window.open(locationDetails.directionsUrl, '_blank')}
                 >
                   <Icon name="Navigation" className="mr-2" size={16} />
-                  Построить маршрут
+                  Как добраться
                 </Button>
               </div>
               
