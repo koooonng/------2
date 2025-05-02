@@ -18,7 +18,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       
       {/* Подвал */}
       <footer className="text-center py-6 text-[#59534D] text-sm">
-        <p>С любовью, Александр и Екатерина</p>
+        <p>С любовью, Карина и Константин</p>
         <p className="mt-2">© 2025</p>
       </footer>
     </div>

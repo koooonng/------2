@@ -1,6 +1,5 @@
 
 import PageLayout from "@/components/wedding/PageLayout";
-import PageHeader from "@/components/wedding/PageHeader";
 import EventDetailsCard from "@/components/wedding/EventDetailsCard";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import ContactCard from "@/components/wedding/ContactCard";
@@ -8,11 +7,11 @@ import LocationMap from "@/components/wedding/LocationMap";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
-  const { couple, eventDetails, rsvp, contacts, location } = WEDDING_CONFIG;
+  const { eventDetails, rsvp, contacts, location } = WEDDING_CONFIG;
 
   return (
     <PageLayout>
-      <div className="relative mb-12 pb-12">
+      <div className="relative mb-12">
         <div className="w-full max-w-lg mx-auto">
           <img 
             src="https://cdn.poehali.dev/files/f598e8f8-ed07-41de-8b47-7f4972f880d7.png" 
@@ -21,12 +20,6 @@ const WeddingInvitation = () => {
           />
         </div>
       </div>
-      
-      <PageHeader 
-        coupleNames={couple.names} 
-        subtitle={couple.inviteText} 
-        date={couple.date} 
-      />
       
       <EventDetailsCard 
         title={eventDetails.title}
