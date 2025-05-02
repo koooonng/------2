@@ -4,7 +4,7 @@ import EventDetailsCard from "@/components/wedding/EventDetailsCard";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import ContactCard from "@/components/wedding/ContactCard";
 import LocationMap from "@/components/wedding/LocationMap";
-import DressCodeCard from "@/components/wedding/DressCodeCard";
+import InvitationHeader from "@/components/wedding/InvitationHeader";
 import { WEDDING_CONFIG } from "@/components/wedding/constants";
 
 const WeddingInvitation = () => {
@@ -12,28 +12,17 @@ const WeddingInvitation = () => {
 
   return (
     <PageLayout>
-      <div className="relative mb-12">
-        <div className="w-full max-w-lg mx-auto">
-          <img 
-            src="https://cdn.poehali.dev/files/f598e8f8-ed07-41de-8b47-7f4972f880d7.png" 
-            alt="Свадебное приглашение" 
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
+      <InvitationHeader 
+        title="Дресс-код"
+        description="Для нас главное-ваше присутствие! Но мы будем рады, если в своих нарядах вы поддержите цветовую гамму и стиль нашей свадьбы."
+        confirmationText="Будем очень рады видеть вас! Просим подтвердить свое присутствие на торжество до"
+        confirmationDate="1.06.2025"
+      />
       
       <EventDetailsCard 
         title={eventDetails.title}
         description={eventDetails.description}
         details={eventDetails.items}
-      />
-      
-      <DressCodeCard 
-        title={dressCode.title}
-        description={dressCode.description}
-        colorPalette={dressCode.colorPalette}
-        confirmationText={dressCode.confirmationText}
-        confirmationDate={dressCode.confirmationDate}
       />
       
       <LocationMap 

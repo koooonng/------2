@@ -1,16 +1,10 @@
 
-import { type Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
-import tailwindcssAnimate from "tailwindcss-animate";
-import typography from "@tailwindcss/typography";
-
+/** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}'
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     container: {
@@ -21,6 +15,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'dancing': ['Dancing Script', 'cursive'],
+        'playfair': ['Playfair Display', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,13 +54,12 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         wedding: {
-          'beige': '#D2B48C',
-          'dark-beige': '#A89070',
-          'light-beige': '#F5DEB3',
-          'text': '#59534D',
-          'dark': '#3C3830',
-          'background': '#F8F4E9'
-        }
+          gold: "var(--wedding-gold)",
+          beige: "var(--wedding-beige)",
+          brown: "var(--wedding-brown)",
+          "light-beige": "var(--wedding-light-beige)",
+          "dark-brown": "var(--wedding-dark-brown)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,11 +80,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      fontFamily: {
-        'playfair': ['Playfair Display', 'serif'],
-        'sans': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif', ...defaultTheme.fontFamily.sans],
-      },
     },
   },
-  plugins: [tailwindcssAnimate, typography],
-} satisfies Config
+  plugins: [require("tailwindcss-animate")],
+}
