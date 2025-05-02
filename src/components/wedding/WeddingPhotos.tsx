@@ -22,7 +22,6 @@ interface WeddingPhotosProps {
   footnoteImage?: string;
   locationDetails?: LocationDetails;
   coordinatorContact?: CoordinatorContact;
-  invitationUrl?: string;
 }
 
 const WeddingPhotos = ({
@@ -31,8 +30,7 @@ const WeddingPhotos = ({
   locationImage,
   footnoteImage,
   locationDetails,
-  coordinatorContact,
-  invitationUrl
+  coordinatorContact
 }: WeddingPhotosProps) => {
   useEffect(() => {
     // Add font loading
@@ -51,13 +49,6 @@ const WeddingPhotos = ({
     window.open('https://realliance.activhotels.ru/?ysclid=ma6r5ss8a6180427940', '_blank');
   };
 
-  // Функция для перехода на страницу приглашения
-  const openInvitationPage = () => {
-    if (invitationUrl) {
-      window.open(invitationUrl, '_blank');
-    }
-  };
-
   return (
     <div className="flex flex-col items-center gap-10">
       {coupleImage && (
@@ -67,18 +58,6 @@ const WeddingPhotos = ({
             alt="Свадебное приглашение" 
             className="w-full h-auto"
           />
-          
-          {invitationUrl && (
-            <div className="mt-4 text-center">
-              <Button
-                className="bg-[#C19A70] hover:bg-[#A97B50] text-white px-6 py-2 rounded-md transition-colors"
-                onClick={openInvitationPage}
-              >
-                <Icon name="FileHeart" className="mr-2" size={18} />
-                Открыть электронное приглашение
-              </Button>
-            </div>
-          )}
         </div>
       )}
       
@@ -119,7 +98,7 @@ const WeddingPhotos = ({
                     onClick={() => window.open(locationDetails.directionsUrl, '_blank')}
                   >
                     <Icon name="Navigation" className="mr-2" size={16} />
-                    Как добраться
+                    Проложить маршрут
                   </Button>
                   
                   <Button
@@ -127,7 +106,7 @@ const WeddingPhotos = ({
                     onClick={openHotelWebsite}
                   >
                     <Icon name="Globe" className="mr-2" size={16} />
-                    Сайт отеля
+                    Забронировать номер
                   </Button>
                 </div>
               </div>
