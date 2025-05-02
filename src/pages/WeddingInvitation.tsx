@@ -18,9 +18,9 @@ const WeddingInvitation = () => {
         locationDetails={{
           address: location.address,
           venueName: location.venueTitle,
-          // Чистая карта без отзывов и рекламы
-          mapUrl: "https://yandex.ru/maps-reviews-widget/1117767162?comments_removed=1",
-          directionsUrl: "https://yandex.ru/maps/?rtext=~53.215189,50.190320&rtt=auto"
+          // Чистая карта, как было изначально
+          mapUrl: location.mapUrl,
+          directionsUrl: location.directionsUrl
         }}
         coordinatorContact={coordinator}
       />
